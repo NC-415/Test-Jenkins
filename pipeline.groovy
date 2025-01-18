@@ -1,9 +1,11 @@
 pipeline {
     agent any
     stages {
-        stage('Echo Hello World') {
+
+        stage('Run Python Script') {
             steps {
-                echo 'Hello, World!'
+               
+                 bat 'python helloworld.py' 
             }
         }
     }
